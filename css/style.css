@@ -379,15 +379,15 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn-reserva:hover {
     background-color: rgb(228, 150, 4);
     transition: all ease .3s;
 }
-button .icon-tabler {
+.btn-reserva .icon-tabler {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
 }
-button:hover .icon-tabler{
+.btn-reserva:hover .icon-tabler{
     animation: bounce 0.5s infinite;
 }
 @keyframes bounce {
@@ -404,7 +404,7 @@ button:hover .icon-tabler{
     }
   }
 
-button .icon-tabler:hover {
+.btn-reserva .icon-tabler:hover {
     transition:  ease-in-out .4s;
 }
 
@@ -418,4 +418,47 @@ button .icon-tabler:hover {
         height: 50rem;
         width: 100%;
     }
+}
+
+/* -------- section servicios -------- */
+#servicios{
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.container-servicios {
+  height: 40rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+}
+
+.btn-servicios {
+  width: 12rem;
+  height: 12rem; /* Ajusta la altura según tus necesidades */
+  /* Otros estilos para tus botones */
+}
+
+@media screen and (max-width: 767px) {
+  #servicios{
+    height: 50rem;
+    width: 100%;
+  }
+  .container-servicios {
+    height: 50rem;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .btn-servicios {
+    width: 10rem;
+    height: 10rem; /* Ajusta la altura según tus necesidades */
+    /* Otros estilos para tus botones */
+  }
 }
