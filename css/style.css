@@ -410,12 +410,12 @@ button .icon-tabler:hover {
 
 @media (max-width: 760px) {
     #home {
-        height: 70rem;
+        height: 60rem;
         width: 100%;
     }
 
     .home-container {
-        height: 70rem;
+        height: 60rem;
         width: 100%;
     }
 }
