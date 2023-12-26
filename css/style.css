@@ -407,3 +407,15 @@ button:hover .icon-tabler{
 button .icon-tabler:hover {
     transition:  ease-in-out .4s;
 }
+
+@media (max-width: 760px) {
+    #home {
+        height: 70rem;
+        width: 100%;
+    }
+
+    .home-container {
+        height: 70rem;
+        width: 100%;
+    }
+}
