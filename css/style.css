@@ -40,7 +40,9 @@
   padding: 0;
   margin: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
@@ -433,6 +435,7 @@ button {
     height: 50rem;
     width: 100%;
   }
+  
 }
 
 /* -------- section servicios -------- */
@@ -448,10 +451,9 @@ button {
 
 .container-servicios {
   height: 40rem;
-  width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 3rem;
 
 }
 
@@ -478,11 +480,11 @@ hr {
   #servicios {
     height: 50rem;
     width: 100%;
+   
   }
 
   .container-servicios {
     height: 50rem;
-    width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
@@ -492,5 +494,198 @@ hr {
     height: 10rem;
     /* Ajusta la altura según tus necesidades */
     /* Otros estilos para tus botones */
+  }
+}
+
+
+/* ----------- section nosotros ------------ */
+
+#nosotros {
+  height: 50rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.container-nosotros {
+  height: 50rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+
+
+#carrusel-caja {
+  -moz-animation: automatizacion 15s infinite linear;
+  -o-animation: automatizacion 15s infinite linear;
+  -webkit-animation: automatizacion 15s infinite linear;
+  animation: automatizacion 15s infinite linear;
+
+  -webkit-transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -ms-transition: all 0.75s ease;
+  -o-transition: all 0.75s ease;
+  transition: all 0.75s ease;
+  height: 20rem;
+  width: 400%;
+}
+
+#carrusel-contenido {
+  margin: 0 auto;
+  overflow: hidden;
+  text-align: center;
+}
+
+.imagenes{
+  height: 500px;
+  width: 50%;
+  margin: auto;
+}
+
+.carrusel-elemento {
+  float: left;
+  width: 25%;
+}
+
+@-moz-keyframes automatizacion {
+  0% {
+  margin-left: 0;
+  }
+
+  20% {
+      margin-left: 0;
+  }
+
+  25% {
+      margin-left: -100%;
+  }
+
+  45% {
+      margin-left: -100%;
+  }
+
+  50% {
+      margin-left: -200%;
+  }
+
+  70% {
+      margin-left: -200%;
+  }
+
+  75% {
+      margin-left: -300%;
+  }
+  
+  99% {
+      margin-left: -300%;
+  }
+  
+  100% {
+      margin-left: 0;
+  }
+}
+
+@-webkit-keyframes automatizacion {
+  0% {
+      margin-left: 0;
+  }
+
+  20% {
+      margin-left: 0;
+  }
+
+  25% {
+      margin-left: -100%;
+  }
+
+  45% {
+      margin-left: -100%;
+  }
+
+  50% {
+      margin-left: -200%;
+  }
+
+  70% {
+      margin-left: -200%;
+  }
+
+  75% {
+      margin-left: -300%;
+  }
+  
+  99% {
+      margin-left: -300%;
+  }
+  
+  100% {
+      margin-left: 0;
+  }
+}
+
+@keyframes automatizacion {
+  0% {
+      margin-left: 0;
+  }
+
+  20% {
+      margin-left: 0;
+  }
+
+  25% {
+      margin-left: -100%;
+  }
+
+  45% {
+      margin-left: -100%;
+  }
+
+  50% {
+      margin-left: -200%;
+  }
+
+  70% {
+      margin-left: -200%;
+  }
+
+  75% {
+      margin-left: -300%;
+  }
+  
+  99% {
+      margin-left: -300%;
+  }
+  
+  100% {
+      margin-left: 0;
+  }
+}
+.nombres-br {
+  text-align: center;
+  font-weight: 600;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+@media (max-width: 760px) {
+  
+#nosotros {
+  height: 50rem;
+  width: 100%;
+
+}
+.container-nosotros {
+  height: 50rem;
+  width: 100%;
+
+}
+  .imagenes{
+    height: 500px;
+    width: 100%;
+    margin: auto;
   }
 }
