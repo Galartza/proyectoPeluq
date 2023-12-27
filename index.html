@@ -18,15 +18,16 @@
          <nav class="nav container">
             <div class="nav__data">
                <a href="#" class="nav__logo">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-razor-electric" width="30" height="30" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                    <path d="M8 3v2" />
-                    <path d="M12 3v2" />
-                    <path d="M16 3v2" />
-                    <path d="M9 12v6a3 3 0 0 0 6 0v-6h-6z" />
-                    <path d="M8 5h8l-1 4h-6z" />
-                    <path d="M12 17v1" />
-                  </svg>ClanBarber
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-razor-electric" width="34" height="34" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                     <path d="M8 3v2" />
+                     <path d="M12 3v2" />
+                     <path d="M16 3v2" />
+                     <path d="M9 12v6a3 3 0 0 0 6 0v-6h-6z" />
+                     <path d="M8 5h8l-1 4h-6z" />
+                     <path d="M12 17v1" />
+                   </svg>
+                   ClanBarber
                </a>
                
                <div class="nav__toggle" id="nav-toggle">
@@ -38,15 +39,58 @@
             <!--=============== NAV MENU ===============-->
             <div class="nav__menu" id="nav-menu">
                <ul class="nav__list">
-                  <li><a href="#" class="nav__link">Home</a></li>
+                  <li><a href="#" class="nav__link">Inicio</a></li>
 
-                  <li><a href="#" class="nav__link">Service</a></li>
-
-                
+                  <li><a href="#" class="nav__link">Servicios</a></li>
                   
-                  <li><a href="#" class="nav__link">Products</a></li>
+                  <!--=============== DROPDOWN 1 ===============-->
+                  <li class="dropdown__item">
+                     <div class="nav__link">
+                        Company <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                     </div>
 
-                  <li><a href="#" class="nav__link">Contact</a></li>
+                     <ul class="dropdown__menu">
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                 <path d="M9 7m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" />
+                                 <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                                 <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                 <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+                               </svg>
+                               Nosotros
+                           </a>                          
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-building-store" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                 <path d="M3 21l18 0" />
+                                 <path d="M3 7v1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1m0 1a3 3 0 0 0 6 0v-1h-18l2 -4h14l2 4" />
+                                 <path d="M5 21l0 -10.15" />
+                                 <path d="M19 21l0 -10.15" />
+                                 <path d="M9 21v-4a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v4" />
+                               </svg>
+                               Productos
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="#" class="dropdown__link">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-album" width="25" height="25" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                                 <path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" />
+                                 <path d="M12 4v7l2 -2l2 2v-7" />
+                               </svg>
+                              Galeria
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+
+                  <li><a href="#" class="nav__link">Contactanos</a></li>
                </ul>
             </div>
          </nav>
@@ -78,14 +122,95 @@
         <!------------ section servicios ------------->
 
         <section id="servicios">
-         <h1>servicios</h1>
+
+         <h1>SERVICIOS</h1>
+         <hr>
+         <br>
+         <br>
+  
             <div class="container-servicios">
-               <button class="btn-servicios">Turno no asistido</button>
-               <button class="btn-servicios">Afeitado</button>
-               <button class="btn-servicios">Barba sola</button>
-               <button class="btn-servicios">Corte y barba</button>
-               <button class="btn-servicios">Limpieza facial</button>
-               <button class="btn-servicios">Corte</button>
+               <a href="">
+                  <button class="btn-servicios">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-circle-x" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                        <path d="M10 10l4 4m0 -4l-4 4" />
+                      </svg>
+                     Turno no asistido
+                  </button>
+               </a>
+               <a href="">
+                  <button class="btn-servicios">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-razor" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 3h10v4h-10z" />
+                        <path d="M12 7v4" />
+                        <path d="M12 11a2 2 0 0 1 2 2v6a2 2 0 1 1 -4 0v-6a2 2 0 0 1 2 -2z" />
+                      </svg>
+                     Afeitado
+                  </button>
+               </a>
+             
+               <a href="">
+                  <button class="btn-servicios">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-blade" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M17.707 3.707l2.586 2.586a1 1 0 0 1 0 1.414l-.586 .586a1 1 0 0 0 0 1.414l.586 .586a1 1 0 0 1 0 1.414l-8.586 8.586a1 1 0 0 1 -1.414 0l-.586 -.586a1 1 0 0 0 -1.414 0l-.586 .586a1 1 0 0 1 -1.414 0l-2.586 -2.586a1 1 0 0 1 0 -1.414l.586 -.586a1 1 0 0 0 0 -1.414l-.586 -.586a1 1 0 0 1 0 -1.414l8.586 -8.586a1 1 0 0 1 1.414 0l.586 .586a1 1 0 0 0 1.414 0l.586 -.586a1 1 0 0 1 1.414 0z" />
+                        <path d="M8 16l3.2 -3.2" />
+                        <path d="M12.8 11.2l3.2 -3.2" />
+                        <path d="M14 8l2 2" />
+                        <path d="M8 14l2 2" />
+                        <path d="M12 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
+                      </svg>
+                     Barba sola
+                  </button>
+               </a>
+              
+               <a href="">
+                  <button class="btn-servicios">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-razor-electric" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M8 3v2" />
+                        <path d="M12 3v2" />
+                        <path d="M16 3v2" />
+                        <path d="M9 12v6a3 3 0 0 0 6 0v-6h-6z" />
+                        <path d="M8 5h8l-1 4h-6z" />
+                        <path d="M12 17v1" />
+                      </svg>
+                     Corte y barba
+                  </button>
+               </a>
+              
+               <a href="">
+                  <button class="btn-servicios">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-spray" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M4 10m0 2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-4a2 2 0 0 1 -2 -2z" />
+                        <path d="M6 10v-4a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1v4" />
+                        <path d="M15 7h.01" />
+                        <path d="M18 9h.01" />
+                        <path d="M18 5h.01" />
+                        <path d="M21 3h.01" />
+                        <path d="M21 7h.01" />
+                        <path d="M21 11h.01" />
+                        <path d="M10 7h1" />
+                      </svg>
+                     Limpieza facial
+                  </button>
+               </a>
+              
+               <a href="">
+                  <button class="btn-servicios">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-scissors" width="64" height="64" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M6 7m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M6 17m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                        <path d="M8.6 8.6l10.4 10.4" />
+                        <path d="M8.6 15.4l10.4 -10.4" />
+                      </svg>
+                     Corte
+                  </button>
+               </a>
             </div>
         </section>
 

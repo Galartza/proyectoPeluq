@@ -79,8 +79,8 @@ a {
   height: var(--header-height);
 }
 
-.nav__logo, 
-.nav__burger, 
+.nav__logo,
+.nav__burger,
 .nav__close {
   color: var(--white-color);
 }
@@ -112,7 +112,7 @@ a {
   height: 32px;
 }
 
-.nav__burger, 
+.nav__burger,
 .nav__close {
   position: absolute;
   width: max-content;
@@ -141,9 +141,11 @@ a {
     opacity: 0;
     transition: top .4s, opacity .3s;
   }
+
   .nav__menu::-webkit-scrollbar {
     width: 0;
   }
+
   .nav__list {
     background-color: var(--black-color);
     padding-top: 1rem;
@@ -177,6 +179,7 @@ a {
   opacity: 0;
   transform: rotate(90deg);
 }
+
 .show-icon .nav__close {
   opacity: 1;
   transform: rotate(90deg);
@@ -193,7 +196,7 @@ a {
   transition: transform .4s;
 }
 
-.dropdown__link, 
+.dropdown__link,
 .dropdown__sublink {
   padding: 1.25rem 1.25rem 1.25rem 2.5rem;
   color: var(--white-color);
@@ -205,18 +208,18 @@ a {
   transition: background-color .3s;
 }
 
-.dropdown__link i, 
+.dropdown__link i,
 .dropdown__sublink i {
   font-size: 1.25rem;
   font-weight: initial;
 }
 
-.dropdown__link:hover, 
+.dropdown__link:hover,
 .dropdown__sublink:hover {
   background-color: var(--black-color);
 }
 
-.dropdown__menu, 
+.dropdown__menu,
 .dropdown__submenu {
   max-height: 0;
   overflow: hidden;
@@ -224,8 +227,8 @@ a {
 }
 
 /* Show dropdown menu & submenu */
-.dropdown__item:hover .dropdown__menu, 
-.dropdown__subitem:hover > .dropdown__submenu {
+.dropdown__item:hover .dropdown__menu,
+.dropdown__subitem:hover>.dropdown__submenu {
   max-height: 1000px;
   transition: max-height .4s ease-in;
 }
@@ -267,30 +270,34 @@ a {
     display: flex;
     justify-content: space-between;
   }
+
   .nav__toggle {
     display: none;
   }
+
   .nav__list {
     height: 100%;
     display: flex;
     column-gap: 3rem;
   }
+
   .nav__link {
     height: 100%;
     padding: 0;
     justify-content: initial;
     column-gap: .25rem;
   }
+
   .nav__link:hover {
     background-color: transparent;
   }
 
-  .dropdown__item, 
+  .dropdown__item,
   .dropdown__subitem {
     position: relative;
   }
 
-  .dropdown__menu, 
+  .dropdown__menu,
   .dropdown__submenu {
     max-height: initial;
     overflow: initial;
@@ -302,7 +309,7 @@ a {
     transition: opacity .3s, top .3s;
   }
 
-  .dropdown__link, 
+  .dropdown__link,
   .dropdown__sublink {
     padding-inline: 1rem 3.5rem;
   }
@@ -326,7 +333,7 @@ a {
   }
 
   /* Show dropdown submenu */
-  .dropdown__subitem:hover > .dropdown__submenu {
+  .dropdown__subitem:hover>.dropdown__submenu {
     opacity: 1;
     top: 0;
     pointer-events: initial;
@@ -338,90 +345,98 @@ a {
 
 /* ------ section home ------- */
 #home {
-    height: 40rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--black-color-lighten);
+  height: 40rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black-color-lighten);
 }
 
 .home-container {
-    width: 100%;
-    height: 40rem;
-    display: grid;
-    flex-direction: column;
-    justify-content: center;
+  width: 100%;
+  height: 40rem;
+  display: grid;
+  flex-direction: column;
+  justify-content: center;
 }
 
 img {
-    max-width: 1200px;
-    width: 100%;
-    height: 25rem;
+  max-width: 1200px;
+  width: 100%;
+  height: 25rem;
 }
 
 button {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-    height:3rem;
-    width: 15rem;
-    padding: .8rem;
-    border-radius: 20px;
-    border: none;
-    background-color: orange ;
-    color: #fff;
-    font-size: .8rem;
-    font-weight: 600;
-    text-transform: uppercase;
-    cursor: pointer;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 3rem;
+  width: 15rem;
+  padding: .8rem;
+  border-radius: 20px;
+  border: none;
+  background-color: orange;
+  color: #fff;
+  font-size: .8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
 }
 
 .btn-reserva:hover {
-    background-color: rgb(228, 150, 4);
-    transition: all ease .3s;
+  background-color: rgb(228, 150, 4);
+  transition: all ease .3s;
 }
+
 .btn-reserva .icon-tabler {
-    cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
 }
-.btn-reserva:hover .icon-tabler{
-    animation: bounce 0.5s infinite;
+
+.btn-reserva:hover .icon-tabler {
+  animation: bounce 0.5s infinite;
 }
+
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-  
-    40% {
-      transform: translateY(-5px);
-    }
-  
-    60% {
-      transform: translateY(-3px);
-    }
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
 
+  40% {
+    transform: translateY(-5px);
+  }
+
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
 .btn-reserva .icon-tabler:hover {
-    transition:  ease-in-out .4s;
+  transition: ease-in-out .4s;
 }
 
 @media (max-width: 760px) {
-    #home {
-        height: 50rem;
-        width: 100%;
-    }
+  #home {
+    height: 50rem;
+    width: 100%;
+  }
 
-    .home-container {
-        height: 50rem;
-        width: 100%;
-    }
+  .home-container {
+    height: 50rem;
+    width: 100%;
+  }
 }
 
 /* -------- section servicios -------- */
-#servicios{
+#servicios {
   height: 40rem;
   width: 100%;
   display: flex;
@@ -430,6 +445,7 @@ button {
   flex-direction: column;
   padding: 2rem;
 }
+
 .container-servicios {
   height: 40rem;
   width: 100%;
@@ -441,24 +457,40 @@ button {
 
 .btn-servicios {
   width: 12rem;
-  height: 12rem; /* Ajusta la altura según tus necesidades */
-  /* Otros estilos para tus botones */
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: black;
+  font-weight: 800;
+  -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.75);
+}
+hr {
+  border: solid 2px orange;
+  width: 10rem;
 }
 
 @media screen and (max-width: 767px) {
-  #servicios{
+  #servicios {
     height: 50rem;
     width: 100%;
   }
+
   .container-servicios {
     height: 50rem;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
+
   .btn-servicios {
     width: 10rem;
-    height: 10rem; /* Ajusta la altura según tus necesidades */
+    height: 10rem;
+    /* Ajusta la altura según tus necesidades */
     /* Otros estilos para tus botones */
   }
 }
